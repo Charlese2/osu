@@ -101,7 +101,7 @@ namespace osu.Game.Screens.Edit.Compose.Components.Timeline
             maxZoom = maximum;
 
             CurrentZoom = zoomTarget = initial;
-            zoomedContentWidthCache.Invalidate();
+            updateZoomedContentWidth();
 
             isZoomSetUp = true;
             zoomedContent.Show();
